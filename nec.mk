@@ -40,9 +40,9 @@ $(foreach MANDATORY_VAR, $(DMBS_BUILD_MANDATORY_VARS), $(call ERROR_IF_UNSET, $(
 NEC_SRC := $(NEC_MODULE_PATH)/src/nec.c
 
 # Compiler flags and sources
-SRC			       += $(NEC_SRC)
-CC_FLAGS           += -DDMBS_MODULE_NEC
-CC_FLAGS 	       += -I$(NEC_MODULE_PATH)/include/
+SRC      += $(NEC_SRC)
+CC_FLAGS += -DDMBS_MODULE_NEC
+CC_FLAGS += -I$(NEC_MODULE_PATH)/include/
 
 # Phony build targets for this module
 .PHONY: $(DMBS_BUILD_TARGETS)

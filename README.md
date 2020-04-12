@@ -4,7 +4,7 @@ Unmodulated NEC protocol library for [DMBS](https://github.com/abcminiuser/dmbs)
 
 Output: OC1B pin (positive active).
 
-```
+```c
 /*
  *  NEC init function
  */
