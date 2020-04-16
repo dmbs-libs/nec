@@ -33,7 +33,7 @@
 #endif
 
 #define CPU_NS   (1000000000 / (F_CPU))
-#define TIM_PRSC (1476 / (CPU_NS))
+#define TIM_PRSC ((1476 + (CPU_NS)) / (CPU_NS))
 
 #if TIM_PRSC > 64
 # error "Your F_CPU is too high!"
